@@ -35,7 +35,7 @@ const todoList = () => {
       .map((todo) => {
         ds = todo.completed ? "[x]" : "[ ]";
         dd = todo.dueDate == today ? " " : todo.dueDate;
-        return `${ds} ${todo.title} ${dd}`;
+        return `${ds} ${todo.title}.trim() ${dd}`;
       })
       .join("\n");
   };
